@@ -1,0 +1,12 @@
+{'author': u'Claranet GmbH',
+ 'description': 'Check PostgreSQL Replication Levels',
+ 'download_url': '',
+ 'files': {'agents': ['bakery/postgres_replication', 'plugins/postgres_replication.sh'],
+           'checks': ['postgres_replication'],
+           'web': ['plugins/wato/postgres_replication.py']},
+ 'name': 'postgres_replication',
+ 'num_files': 4,
+ 'title': u'PostgreSQL Replication',
+ 'version': '1.2.0',
+ 'version.min_required': '2.0.0',
+ 'version.packaged': '2.0.0'}

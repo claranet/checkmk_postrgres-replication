@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+# -*- encoding: utf-8; py-indent-offset: 4 -*-
+# pylint: disable-all
+#
+# CheckMK - postgresql_replication
+#
+# Version: 1.2.0
+# Author: Claranet GmbH
+#
+
+from pathlib import Path
+from typing import List, Tuple, Dict
+
+from cmk.base.cee.plugins.bakery.bakery_api.v1 import (
+    FileGenerator,
+    OS,
+    Plugin,
+    register
+)
+
+
+def get_postgres_replication_plugin_files(conf: Tuple[str, Dict[str, List[any]]]) -> FileGenerator:
+   interval = conf.get('interval')
+
+   yield Plugin(
+      base_os=OS.LINUX,
+      source=Path('postgres_replication.sh'),
+      target=Path('postgres_replication.sh'),
+      interval=interval,
+   )
+
+register.bakery_plugin(
+   name="postgres_replication",
+   files_function=get_postgres_replication_plugin_files,
+)
+
