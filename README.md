@@ -1,6 +1,4 @@
 # PostgreSQL Replication Monitoring
 
-Monitoring for PostgreSQL Replications.
-Configuration in WATO and including Bakery Support
-
+Original from https://github.com/Bastian-Kuhn/Check_MK-Treasures/
 
