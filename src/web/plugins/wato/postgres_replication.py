@@ -2,7 +2,7 @@
 #
 # CheckMK - postgresql_replication
 #
-# Version: 1.2.0
+# Version: 2.0.0
 # Author: Claranet GmbH
 #
 

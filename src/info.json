@@ -17,7 +17,7 @@
   "name": "postgres_replication",
   "num_files": 4,
   "title": "PostgreSQL Replication",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "version.min_required": "2.0.0",
   "version.packaged": "2.0.0"
 }
